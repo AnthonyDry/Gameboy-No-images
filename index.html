@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Gameboy thingy</title>
+		<link rel="stylesheet" type="text/css" href="css/gameboyAndHeader.css" />
+		<link rel="stylesheet" type="text/css" href="css/displayStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/animationz.css" />
+		<style type="text/css">
+			@font-face 
+			{
+				font-family: AtariFont;
+				src: url('PrStart.ttf');
+			}
+			@font-face 
+			{
+			    font-family: 'BrickFaces';
+			    src: url('megamanbrickz-webfont.eot');
+			    src: url('megamanbrickz-webfont.eot?#iefix') format('embedded-opentype'),
+			         url('megamanbrickz-webfont.woff') format('woff'),
+			         url('megamanbrickz-webfont.ttf') format('truetype'),
+			         url('megamanbrickz-webfont.svg#megaman_.villanz') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+		</style>
+	</head>
+	<body>
+		<audio id="soundtrack" loop="loop">
+			 <source src="music/gameboysoundtrack.ogg" type="audio/ogg">
+  			 <source src="music/gameboysoundtrack.mp3" type="audio/mpeg">
+		</audio>
+		<audio id="soundEffectStartUp">
+			 <source src="music/SEStartUp.ogg" type="audio/ogg">
+  			 <source src="music/SEStartUp.mp3" type="audio/mpeg">
+		</audio>
+		<audio id="soundEffectMoving">
+			 <source src="music/SEMoving.ogg" type="audio/ogg">
+  			 <source src="music/SEMoving.mp3" type="audio/mpeg">
+		</audio>
+		<audio id="soundEffectWrong">
+			 <source src="music/SEWrong.ogg" type="audio/ogg">
+  			 <source src="music/SEWrong.mp3" type="audio/mpeg">
+		</audio>
+		<audio id="soundEffectCorrect">
+			 <source src="music/SECorrect.ogg" type="audio/ogg">
+  			 <source src="music/SECorrect.mp3" type="audio/mpeg">
+		</audio>
+		<div id="header">
+			<h1>NOW YOU'RE PLAYING</h1>
+			<h2>WITH POWER!</h2>
+		 <!-- här ska det vara controls plzz-->
+		</div>
+		<div id="container">
+			<a id="On" href="#"><div id="onButton"></div></a>
+			<div id="wrapperShadow"><div id="wrapper">
+				<div id="wrapperhead">
+					<div class="lines" id="first"></div>
+					<div id="onAndOff">◄ OFF / ON ►</div>
+					<div class="lines" id="second"></div>
+					<div id="third"></div>
+					
+				</div>
+				<div id="displayborder">
+					<div id="displayName">
+						<div class="NameLines" id="nameLines1"></div>
+						<div id="displayNameText">LABORATION 3 ANTHONY DRY</div>
+						<div class="NameLines" id="nameLines2"></div>
+					</div>
+					<div id="lamp"></div>
+					<div id="display">
+						
+						<!-- Här ska själva spelet vara allt annat är design :) -->
+						
+					</div>
+				</div>
+				<div id="orginalGameboylogo">oldschool <span>MEMO GAME</span></div>
+				<div id="wrapperfooter">
+					<div id="arrowcontainer">
+						<table id="Arrows" cellspacing="0" cellpadding="0">
+							<tr>
+								<td></td>
+								<td class="visablearrows" id="arrowUp"><a class="filler" id="clickUp">▲</a></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td class="visablearrows" id="arrowLeft"><a class="filler" id="clickLeft">◄</a></td>
+								<td id="arrowCenter"><div></div></td>
+								<td class="visablearrows" id="arrowRight"><a class="filler" id="clickRight">►</a></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td  class="visablearrows" id="arrowDown"><a class="filler" id="clickDown">▼</a></td>
+								<td></td>
+							</tr>
+							
+						</table>
+					</div>
+					<div id="startText">SPACE</div>
+					<div id="startButtonContainer">
+						<a id="startButton"></a>
+					</div>
+					<div id="actionButtonsContainer">
+						<a class="actionButton" id="Sbutton"></a>
+						<a class="actionButton" id="Abutton"></a>
+					</div>
+					<div id="actionButtonsText">NM</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/controls.js"></script>
+		<script type="text/javascript" src="js/view.js"></script>
+		<script type="text/javascript" src="js/MemoryGameHandler.js"></script>
+		<script type="text/javascript" src="js/RandomHandler.js"></script>
+	</body>
+</html>

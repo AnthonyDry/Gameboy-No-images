@@ -1,0 +1,132 @@
+#display 
+{
+	position: relative;
+	width: 517px;
+	height: 411px;
+	-moz-box-shadow: inset 0 0 25px rgba(0,0,0, 0.75);
+	-webkit-box-shadow: inset 0 0 25px rgba(0,0,0, 0.75);
+	box-shadow: inset 0 0 25px rgba(0,0,0, 0.75);
+	background-color: #A49408;
+	margin: 0 auto;
+}
+#display h3
+{
+	position:relative;
+	font-family:AtariFont, monospace;
+	color:rgba( 0, 0, 0, 0.5);
+	text-align:center;
+	top:190px;
+	padding:0px;
+	margin:0px;
+	font-size: 40px;
+	animation-delay:1s;
+	-moz-animation-delay:1s; /* Firefox */
+	-webkit-animation-delay:1s; /* Safari and Chrome */
+	-o-animation-delay:1s; /* Opera */
+	animation:flashing 2500ms;
+	-moz-animation:flashing 2500ms; /* Firefox */
+	-webkit-animation:flashing 1122ms; /* Safari and Chrome */
+	-o-animation:flashing 2500ms; /* Opera */
+	animation-play-state: running;
+	animation-iteration-count:100;
+	-moz-animation-iteration-count:100; /* Firefox */
+	-webkit-animation-iteration-count:100; /*Safari and Chrome*/
+	-o-animation-iteration-count:100; /* Opera */
+	visibility: visible;
+	
+}
+#display #theMemoryGame td
+{
+	display:inline-block;
+	height:84px;
+	width:84px;
+	margin:1px;
+	border-style:solid;
+	border-radius: 3px;
+	border-width: 6px;
+	border-color: rgba( 0, 0, 0, 0.5);
+	overflow:hidden;
+	text-align: center;
+	
+	
+}
+#display #theMemoryGame
+{
+	margin:0 auto;
+}
+
+/* ACTIVE BRICK*/
+.Active-brick
+{
+	font-family:AtariFont, monospace;
+    color:rgba( 0, 0, 0, 0.5);
+    background-color:rgba( 0, 0, 0, 0.2);
+	font-size:45px;
+}
+.Selected-brick
+{
+	font-family:AtariFont, monospace;
+	background-color:rgba( 0, 0, 0, 0.5);
+	border:none;
+	color:#A49408;
+	font-size:45px;
+}
+.Untouched-brick
+{
+	font-family:AtariFont, monospace;
+	color:rgba( 0, 0, 0, 0.5);
+	font-size:45px;
+}
+.Revealed-brick
+{
+	font-family: 'BrickFaces', monospace;
+	color:#A49408;
+	font-size:80px;
+	background-color:rgba( 0, 0, 0, 0.5);
+}
+.Correct-brick
+{
+	font-family: 'BrickFaces', monospace;
+	color:#A49408;
+	font-size:80px;
+	background-color:rgba( 0, 0, 0, 1.0);
+}
+.Active-on-selected
+{
+	font-family:AtariFont, monospace;
+	background-color:rgba( 0, 0, 0, 0.5);
+	border-color:#A49408;
+	color:#A49408;
+	font-size:45px;
+}
+.Active-on-correct
+{
+	font-family: 'BrickFaces', monospace;
+	color:#A49408;
+	font-size:80px;
+	
+	background-color:rgba( 0, 0, 0, 0.8);
+}
+#EndScreen h4, h5
+{
+	
+	position:relative;
+	top:100px;
+	font-family:AtariFont, monospace;
+	color:rgba( 0, 0, 0, 0.5);
+	text-align:center;
+	padding-bottom:10px;
+	margin:0px;
+	font-size: 30px;
+}
+.VisibleBrick
+{
+  	line-height: 82px;
+}
+.HiddenBrick
+{
+  	line-height:82px;
+}
+
+
+
